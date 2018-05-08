@@ -14,3 +14,13 @@
 
 	Text Domain: true-republic-roasters
 */
+
+@import "base/index";
+@import "utilities/index";
+@import "components/navigation/index";
+@import "components/header/index";
+@import "layouts/index";
+
+body {
+  background: #e1a948;
+}

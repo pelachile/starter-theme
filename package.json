@@ -1,0 +1,40 @@
+{
+  "name": "starter-theme",
+  "version": "1.0.0",
+  "description": "Starter WordPress theme based on Genesis Framework",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pelachile/starter-theme.git"
+  },
+  "keywords": [
+    "Genesis",
+    "Framwork",
+    "WordPress"
+  ],
+  "author": "Cory Moore",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pelachile/starter-theme/issues"
+  },
+  "homepage": "https://github.com/pelachile/starter-theme#readme",
+  "dependencies": {
+    "npm": "^6.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "node-bourbon": "^4.2.8",
+    "node-neat": "^2.0.0-beta.0"
+  }
+}
