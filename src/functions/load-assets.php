@@ -25,16 +25,17 @@ function enqueue_scripts_styles() {
 		CHILD_TEXT_DOMAIN . '-fonts',
 		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
 		array(),
-		CHILD_THEME_VERSION
+		null
 	);
+
 	wp_enqueue_style( 'dashicons' );
 
-	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+//	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script(
 		CHILD_TEXT_DOMAIN . '-responsive-menu',
-		CHILD_DIR . "/assets/scripts/responsive-menus{$suffix}.js",
+		CHILD_THEME_DIR_URI . "/assets/scripts/responsive-menus.js",
 		array( 'jquery' ),
-		'',
+		null,
 		true
 	);
 	wp_localize_script(
@@ -44,11 +45,10 @@ function enqueue_scripts_styles() {
 	);
 
 	wp_enqueue_script(
-		CHILD_TEXT_DOMAIN,
-		CHILD_DIR . '/assets/scripts/genesis-sample.js',
+		CHILD_TEXT_DOMAIN . '-sample',
+		CHILD_THEME_DIR_URI . '/assets/scripts/genesis-sample.js',
 		array( 'jquery' ),
-		'',
+		null,
 		true
 	);
-
 }

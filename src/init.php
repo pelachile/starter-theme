@@ -30,6 +30,7 @@ function init_constants() {
 	define( 'CHILD_TEXT_DOMAIN', $theme_dir->get( 'TextDomain' ) );
 
 	define( 'CHILD_THEME_DIR', get_stylesheet_directory() );
+	define( 'CHILD_THEME_DIR_URI', get_stylesheet_directory_uri() );
 	define( 'CHILD_CONFIG_DIR', CHILD_THEME_DIR . '/config/' );
 
 }

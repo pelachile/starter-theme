@@ -17,9 +17,17 @@ const dirs = {
 gulp.task('styles', () => {
   return gulp.src('./assets/sass/style.scss')
       .pipe(sourcemaps.init())
-      .pipe(sass.sync().on('error', sass.logError))
+      .pipe(sass({
+          includePaths: [].concat( bourbon, neat),
+          errorLogToConsole: true,
+          outputStyle: 'expanded'
+      }))
       .pipe(autoprefixer())
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('.'));
+});
+
+gulp.task('watch', () => {
+    gulp.watch('assets/sass/**/*.scss', ['styles']);
 });
 
