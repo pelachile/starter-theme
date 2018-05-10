@@ -68,7 +68,7 @@ load_child_theme_textdomain( CHILD_TEXT_DOMAIN, apply_filters( 'child_theme_text
 unregister_sidebar( 'header-right' );
 
 // Removes secondary sidebar.
-//unregister_sidebar( 'sidebar-alt' );
+unregister_sidebar( 'sidebar-alt' );
 
 // Removes site layouts.
 genesis_unregister_layout( 'content-sidebar-sidebar' );

@@ -2,7 +2,7 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-  background-color: #fff;
+  background-color: $republic_navy;
   box-shadow: 0 0 20px rgba(0,0,0,0.05);
   padding: 0 30px;
 }
@@ -12,7 +12,7 @@
 
 .title-area {
   float: left;
-  padding-bottom: 25px;
+  padding-bottom: 5px;
   padding-top: 25px;
 }
 
@@ -33,7 +33,7 @@
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
-  color: #333;
+  color: $white;
   text-decoration: none;
 }
 
